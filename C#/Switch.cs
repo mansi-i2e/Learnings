@@ -1,41 +1,41 @@
-// class Switch
-// {
+class Switch
+{
 
-//     public static string ShowDays(int days)
-//     {
-//         switch (days)
-//         {
-//             case 1:
-//                 return "It's Monday";
-//                 break;
+    public static string ShowDays(int days)
+    {
+        switch (days)
+        {
+            case 1:
+                return "It's Monday";
 
-//             case 2:
-//                 return "It's Tuesday";
-//                 break;
 
-//             case 3:
-//                 return "It's Wednesday";
-//                 break;
+            case 2:
+                return "It's Tuesday";
 
-//             case 4:
-//                 return "It's Thursday";
-//                 break;
 
-//             case 5:
-//                 return "It's Friday";
-//                 break;
+            case 3:
+                return "It's Wednesday";
 
-//             case 6:
-//                 return "It's Saturday";
-//                 break;
 
-//             case 7:
-//                 return "It's Sunday";
-//                 break;
+            case 4:
+                return "It's Thursday";
 
-//             default:
-//                 return "Invalid day";
-//                 break;
-//         }
-//     }
-// }
+
+            case 5:
+                return "It's Friday";
+
+
+            case 6:
+                return "It's Saturday";
+
+
+            case 7:
+                return "It's Sunday";
+
+
+            default:
+                return "Invalid day";
+
+        }
+    }
+}

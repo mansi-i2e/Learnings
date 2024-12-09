@@ -97,6 +97,7 @@
 //     }
 // }
 
+
 // switch case 
 
 // class Program
@@ -110,13 +111,181 @@
 
 
 // loops (for, while, do-while)
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//        Console.WriteLine(ForLoop.ShowSum(11));
+//        Console.WriteLine(WhileLoop.GetSum(11));
+//        Console.WriteLine(DoWhileLoop.MySum(11));
+//     }
+// }
+
+
+// strings 
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         string str1 = "Good Morning ";
+// Console.Write("Enter your name: ");
+// string userName = Console.ReadLine();
+
+// concatenation of strings
+
+// string display = str1 + userName;
+// string display1 = string.Concat(str1, userName);
+
+// Console.WriteLine("Hello, " + display);
+// Console.WriteLine("Hello, " + display1);
+
+// string in-built functions
+
+// Console.WriteLine("length: " + userName.Length);     // to get length of string
+
+// Console.WriteLine("Uppercase: " + userName.ToUpper());       // to get string in Uppercase
+
+// Console.WriteLine("Lowercase: " + userName.ToLower());       // to get string in Lowercase
+
+// Console.WriteLine("contains: " + display.Contains("Good"));    // to check occurence of a substring
+// Console.WriteLine("contains: " + display.Contains("Hi"));
+
+// string interpolation
+
+// Console.Write("Enter favorite color: ");
+// string color = Console.ReadLine();
+// Console.WriteLine($"{userName}'s favorite color is {color}"); 
+
+// accessing strings
+
+// Console.WriteLine(str1[3]);
+
+// int pos = str1.IndexOf('M');          // to get position of specific char
+// Console.WriteLine(pos);
+
+// string str2 = str1.Substring(pos);        // extract substring, starting from specifed index
+// Console.WriteLine(str2);
+// }
+// }
+
+
+// Arrays 
+
 class Program
 {
     public static void Main(string[] args)
     {
-       Console.WriteLine(ForLoop.ShowSum(11));
-       Console.WriteLine(WhileLoop.GetSum(11));
-       Console.WriteLine(DoWhileLoop.MySum(11));
+        int[] arr = { 5, 10, 15, 20, 25 };
+
+        // array methods
+
+        // Console.WriteLine(arr.Max());
+        // Console.WriteLine(arr.Min());
+        // Console.WriteLine(arr.Sum());
+
+        // print array elements
+
+        // for (int i = 0; i < arr.Length; i++)
+        // {
+        //     Console.WriteLine($"index {i}: " + arr[i]);
+        // }
+
+        // int index=0;
+        // foreach (int num in arr)
+        // {
+        //     Console.WriteLine($"at index {index}: " + num);
+        //     index++;
+        // }
+
+        // ways to create an array
+
+        // string[] fruits = { "Apple", "Strawberry", "Orange", "Guava", "Mango" };       // without using 'new' keyword , not specifiying the size (preferred)
+
+        // string[] fruits = new string[] {"Apple", "Strawberry", "Orange", "Guava", "Mango"};         // not specifying the size , using 'new' keyword
+
+        // string[] fruits = new string[5] { "Apple", "Strawberry", "Orange", "Guava", "Mango" };        // using 'new' keyword and with size
+
+        // 'new' keyword is needed when array is initialised first and values are added later
+        // string[] fruits;
+        // fruits = new string[] { "Apple", "Mango", "Orange" };
+
+        // looping through array 
+
+        // string[] shapes = new string[5];
+        // for (int i = 0; i < 5; i++)
+        // {
+        //     Console.Write("Enter shape: ");
+        //     shapes[i] = Console.ReadLine();
+        // }
+
+        // Console.WriteLine("Shapes listed: ");
+        // foreach (string s in shapes)
+        // {
+        //     Console.WriteLine(s);
+        // }
+
+        // sorting in arrays      -- ascending order / alphabectically
+
+        // in numbers
+
+        // int[] nums = { 100, 30, 60, 10, 80 };
+        // Array.Sort(nums);
+
+        // foreach (int n in nums)
+        // {
+        //     Console.WriteLine(n);
+        // }
+
+        // in strings         
+
+        // string[] word = { "G", "E", "H", "F", "J", "I" };
+        // Array.Sort(word);
+
+        // foreach (string s in word)
+        // {
+        //     Console.WriteLine(s);
+        // }
+
+        // descending order / reverse alphabetical - first sort method then reverse method
+
+        // in numbers
+
+        // int[] nums = { 45, 75, 15, 95, 25 };
+        // Array.Sort(nums); Array.Reverse(nums);
+        // foreach (int n in nums)
+        // {
+        //     Console.WriteLine(n);
+        // }
+
+        // in strings
+
+        // string[] word = { "O", "K", "N", "L", "M" };
+        // Array.Sort(word); Array.Reverse(word);
+        // foreach (string s in word)
+        // {
+        //     Console.WriteLine(s);
+        // }
+
+        // 2-D Array
+        // int[,] myArr = { { 11, 33, 55 }, { 22, 44, 66 } };
+
+        // access elements
+        // Console.WriteLine(myArr[1, 2]);
+
+        // looping
+        // foreach (int n in myArr)
+        // {
+        //     Console.WriteLine(n);
+        // }
+
+        // for (int i = 0; i < myArr.GetLength(0); i++)
+        // {
+        //     for (int j = 0; j < myArr.GetLength(1); j++)
+        //     {
+        //         Console.WriteLine(myArr[i, j]);
+        //     }
+        // }
+
     }
 }
-
