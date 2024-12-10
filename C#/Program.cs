@@ -355,3 +355,67 @@
 // }
 
 
+// Polymerphism             -- perform single task in diff ways
+
+// compile-time (behaviour of func is decided at compile time) 
+
+// Method overloading 
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         int squareArea = MethodOverload.Area(5);
+//         double triangleArea = MethodOverload.Area(4.2, 6.2);
+//         int rectangleArea = MethodOverload.Area(12, 10);
+//         double circleArea = MethodOverload.Area(3.2);
+
+//         Console.WriteLine($"Square: {squareArea}");
+//         Console.WriteLine($"Triangle: {triangleArea}");
+//         Console.WriteLine($"Rectangle: {rectangleArea}");
+//         Console.WriteLine($"Circle: {circleArea}");
+//     }
+// }
+
+// run-time (behaviour of func is decided at run time) 
+
+// Method overriding
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Animal animal = new Animal();
+//         Herbivore animal1 = new Herbivore();
+//         Carnivore animal2 = new Carnivore();
+
+//         animal.display();
+//         animal1.display();
+//         animal2.display();
+//     }
+// }
+
+
+// Inheritance 
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Child myChild = new Child();
+//         myChild.displayChild();
+//         myChild.displayParent();
+//     }
+// }
+
+
+// Abstraction           -- hiding certain details, showing only essential info
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Vehicle myVehicle = new Scooter();
+//         myVehicle.start();
+//         myVehicle.stop();
+//     }
+// }
+
