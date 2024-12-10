@@ -91,9 +91,9 @@
 // {
 //     public static void Main(string[] args)
 //     {
-// Console.WriteLine(IfElse.showDetail(36));
-// Console.WriteLine(IfElse.showDetail(10));
-// Console.WriteLine(IfElse.showDetail(70));
+//         Console.WriteLine("Enter your Age: ");
+//         int age = Convert.ToInt32(Console.ReadLine());
+//         Console.WriteLine(IfElse.showDetail(age));
 //     }
 // }
 
@@ -104,8 +104,9 @@
 // {
 //     public static void Main(string[] args)
 //     {
-//         Console.WriteLine(Switch.ShowDays(5));
-//         Console.WriteLine(Switch.ShowDays(3));
+//         Console.WriteLine("Enter day number: ");
+//         int day = Convert.ToInt32(Console.ReadLine);
+//         Console.WriteLine(Switch.ShowDays(day));
 //     }
 // }
 
@@ -172,120 +173,185 @@
 
 // Arrays 
 
-class Program
-{
-    public static void Main(string[] args)
-    {
-        int[] arr = { 5, 10, 15, 20, 25 };
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         int[] arr = { 5, 10, 15, 20, 25 };
 
-        // array methods
+// array methods
 
-        // Console.WriteLine(arr.Max());
-        // Console.WriteLine(arr.Min());
-        // Console.WriteLine(arr.Sum());
+// Console.WriteLine(arr.Max());
+// Console.WriteLine(arr.Min());
+// Console.WriteLine(arr.Sum());
 
-        // print array elements
+// print array elements
 
-        // for (int i = 0; i < arr.Length; i++)
-        // {
-        //     Console.WriteLine($"index {i}: " + arr[i]);
-        // }
+// for (int i = 0; i < arr.Length; i++)
+// {
+//     Console.WriteLine($"index {i}: " + arr[i]);
+// }
 
-        // int index=0;
-        // foreach (int num in arr)
-        // {
-        //     Console.WriteLine($"at index {index}: " + num);
-        //     index++;
-        // }
+// int index=0;
+// foreach (int num in arr)
+// {
+//     Console.WriteLine($"at index {index}: " + num);
+//     index++;
+// }
 
-        // ways to create an array
+// ways to create an array
 
-        // string[] fruits = { "Apple", "Strawberry", "Orange", "Guava", "Mango" };       // without using 'new' keyword , not specifiying the size (preferred)
+// string[] fruits = { "Apple", "Strawberry", "Orange", "Guava", "Mango" };       // without using 'new' keyword , not specifiying the size (preferred)
 
-        // string[] fruits = new string[] {"Apple", "Strawberry", "Orange", "Guava", "Mango"};         // not specifying the size , using 'new' keyword
+// string[] fruits = new string[] {"Apple", "Strawberry", "Orange", "Guava", "Mango"};         // not specifying the size , using 'new' keyword
 
-        // string[] fruits = new string[5] { "Apple", "Strawberry", "Orange", "Guava", "Mango" };        // using 'new' keyword and with size
+// string[] fruits = new string[5] { "Apple", "Strawberry", "Orange", "Guava", "Mango" };        // using 'new' keyword and with size
 
-        // 'new' keyword is needed when array is initialised first and values are added later
-        // string[] fruits;
-        // fruits = new string[] { "Apple", "Mango", "Orange" };
+// 'new' keyword is needed when array is initialised first and values are added later
+// string[] fruits;
+// fruits = new string[] { "Apple", "Mango", "Orange" };
 
-        // looping through array 
+// looping through array 
 
-        // string[] shapes = new string[5];
-        // for (int i = 0; i < 5; i++)
-        // {
-        //     Console.Write("Enter shape: ");
-        //     shapes[i] = Console.ReadLine();
-        // }
+// string[] shapes = new string[5];
+// for (int i = 0; i < 5; i++)
+// {
+//     Console.Write("Enter shape: ");
+//     shapes[i] = Console.ReadLine();
+// }
 
-        // Console.WriteLine("Shapes listed: ");
-        // foreach (string s in shapes)
-        // {
-        //     Console.WriteLine(s);
-        // }
+// Console.WriteLine("Shapes listed: ");
+// foreach (string s in shapes)
+// {
+//     Console.WriteLine(s);
+// }
 
-        // sorting in arrays      -- ascending order / alphabectically
+// sorting in arrays      -- ascending order / alphabectically
 
-        // in numbers
+// in numbers
 
-        // int[] nums = { 100, 30, 60, 10, 80 };
-        // Array.Sort(nums);
+// int[] nums = { 100, 30, 60, 10, 80 };
+// Array.Sort(nums);
 
-        // foreach (int n in nums)
-        // {
-        //     Console.WriteLine(n);
-        // }
+// foreach (int n in nums)
+// {
+//     Console.WriteLine(n);
+// }
 
-        // in strings         
+// in strings         
 
-        // string[] word = { "G", "E", "H", "F", "J", "I" };
-        // Array.Sort(word);
+// string[] word = { "G", "E", "H", "F", "J", "I" };
+// Array.Sort(word);
 
-        // foreach (string s in word)
-        // {
-        //     Console.WriteLine(s);
-        // }
+// foreach (string s in word)
+// {
+//     Console.WriteLine(s);
+// }
 
-        // descending order / reverse alphabetical - first sort method then reverse method
+// descending order / reverse alphabetical - first sort method then reverse method
 
-        // in numbers
+// in numbers
 
-        // int[] nums = { 45, 75, 15, 95, 25 };
-        // Array.Sort(nums); Array.Reverse(nums);
-        // foreach (int n in nums)
-        // {
-        //     Console.WriteLine(n);
-        // }
+// int[] nums = { 45, 75, 15, 95, 25 };
+// Array.Sort(nums); Array.Reverse(nums);
+// foreach (int n in nums)
+// {
+//     Console.WriteLine(n);
+// }
 
-        // in strings
+// in strings
 
-        // string[] word = { "O", "K", "N", "L", "M" };
-        // Array.Sort(word); Array.Reverse(word);
-        // foreach (string s in word)
-        // {
-        //     Console.WriteLine(s);
-        // }
+// string[] word = { "O", "K", "N", "L", "M" };
+// Array.Sort(word); Array.Reverse(word);
+// foreach (string s in word)
+// {
+//     Console.WriteLine(s);
+// }
 
-        // 2-D Array
-        // int[,] myArr = { { 11, 33, 55 }, { 22, 44, 66 } };
+// 2-D Array
+// int[,] myArr = { { 11, 33, 55 }, { 22, 44, 66 } };
 
-        // access elements
-        // Console.WriteLine(myArr[1, 2]);
+// access elements
+// Console.WriteLine(myArr[1, 2]);
 
-        // looping
-        // foreach (int n in myArr)
-        // {
-        //     Console.WriteLine(n);
-        // }
+// looping
+// foreach (int n in myArr)
+// {
+//     Console.WriteLine(n);
+// }
 
-        // for (int i = 0; i < myArr.GetLength(0); i++)
-        // {
-        //     for (int j = 0; j < myArr.GetLength(1); j++)
-        //     {
-        //         Console.WriteLine(myArr[i, j]);
-        //     }
-        // }
+// for (int i = 0; i < myArr.GetLength(0); i++)
+// {
+//     for (int j = 0; j < myArr.GetLength(1); j++)
+//     {
+//         Console.WriteLine(myArr[i, j]);
+//     }
+// }
 
-    }
-}
+//     }
+// }
+
+
+// OOPS Concepts
+
+// classes and objects
+
+// class members - fields and methods
+
+// class City
+// {
+//     string name = "Udaipur";
+//     int pincode;
+
+//     public void aboutCity()
+//     {
+//         Console.WriteLine("City of lakes");
+//     }
+
+//     public static void Main(string[] args)
+//     {
+//         City myCity = new City();
+//         myCity.pincode = 313001;
+//         myCity.aboutCity();
+//         Console.WriteLine("City: " + myCity.name);
+//         Console.WriteLine("Pincode: " + myCity.pincode);
+//     }
+// }
+
+// using multiple classes
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Student stud1 = new Student();
+//         stud1.ShowInfo();
+//     }
+// }
+
+
+// Constructors           -- no return type , called automatically when obj of class is created
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Employee myEmp = new Employee();                // default constructor
+//         Employee myEmp1 = new Employee("Ajay", 50000);          // parameterised constructor
+//     }
+// }
+
+
+// Encapsulation       -- hides sensitive data from users
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         BankAcc myAcc = new BankAcc();
+//         myAcc.Balance = 12350;
+//         Console.WriteLine($"Balance is: Rs {myAcc.Balance}");
+//     }
+// }
+
+
