@@ -481,4 +481,66 @@
 // }
 
 
-// 
+// exception handling
+
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         try
+//         {
+//             string[] myLetters = { "A", "B", "C" };
+//             Console.WriteLine(myLetters[6]);
+//         }
+//         catch (Exception e)
+//         {
+//             Console.WriteLine(e.Message);
+//             // Console.WriteLine("Could not access the array");     // own error msg instead of the default one
+//         }
+//         finally
+//         {
+//             Console.WriteLine("try..catch finished");
+//         }
+//     }
+// }
+
+// using exception class
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Number.checkEven(23);
+//     }
+// }
+
+
+// SOLID PRINCIPLES
+
+// SRP - Single responsibilty principle
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Teacher myTeacher = new Teacher();
+//         myTeacher.name = "Suhani Gupta";
+//         myTeacher.subject = "Social Science";
+//         Display display = new Display();
+//         display.TeacherDetail(myTeacher);
+//     }
+// }
+
+// OCP  - Open/Close Principle
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         IntAdd intAdd = new IntAdd() { num1 = 5, num2 = 10 };
+//         intAdd.Addition();
+
+//         StrAdd strAdd = new StrAdd() { str1 = "Hello ", str2 = "Mansi" };
+//         strAdd.Addition();
+
+//         DoubleAdd doubleAdd = new DoubleAdd() { num1 = 4.3, num2 = 7.9 };
+//         doubleAdd.Addition();
+//     }
+// }
