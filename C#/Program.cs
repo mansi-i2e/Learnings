@@ -324,8 +324,8 @@
 // {
 //     public static void Main(string[] args)
 //     {
-//         Student stud1 = new Student();
-//         stud1.ShowInfo();
+//         Person person = Person();
+//         person.ShowInfo();
 //     }
 // }
 
@@ -419,3 +419,66 @@
 //     }
 // }
 
+
+// Interfaces      -- completely abstract classes (another way to achieve abstraction)
+
+// multiple inheritance
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+//         Student myStud = new Student();
+//         myStud.showInfo("Shivani", 56, "Blue");
+//         myStud.showMarks(85.5, "Maths");
+//         myStud.showMarks(90, "Chemistry");
+//         myStud.showMarks(76.5, "Physics");
+//     }
+// }
+
+
+// Enums              -- special classes in c#
+
+// enum in class
+// class Program
+// {
+//     public static void Main(string[] args)
+//     {
+// Direction dir = Direction.south;
+// Console.WriteLine($"direction is: {dir}");
+//     }
+// }
+
+// enum in Switch Case
+// class Program
+// {
+//     public static void Main(string[] args){
+//         int day = (int)Days.friday;
+//         switch (day)
+//         {
+//             case 1:
+//                 Console.WriteLine("Monday");
+//                 break;
+//             case 2:
+//                 Console.WriteLine("Tuesday");
+//                 break;
+//             case 3:
+//                 Console.WriteLine("Wednesday");
+//                 break;
+//             case 4:
+//                 Console.WriteLine("Thursday");
+//                 break;
+//             case 5:
+//                 Console.WriteLine("Friday");
+//                 break;
+//             case 6:
+//                 Console.WriteLine("Saturday");
+//                 break;
+//             case 7:
+//                 Console.WriteLine("Sunday");
+//                 break;
+//         }
+//     }
+// }
+
+
+// 
